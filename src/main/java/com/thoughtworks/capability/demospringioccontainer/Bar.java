@@ -8,12 +8,7 @@ public class Bar {
 
     private Foo foo;
 
-    @Autowired
-    public void setFoo(Foo foo) {
-        this.foo = foo;
-    }
-
-    //    public Bar(Foo foo) {
+//        public Bar(Foo foo) {
 //        this.foo = foo;
 //    }
 
@@ -23,5 +18,9 @@ public class Bar {
 
     public String name() {
         return "Bar";
+    }
+
+    public void setFoo(Foo foo) {
+        this.foo = foo;
     }
 }
